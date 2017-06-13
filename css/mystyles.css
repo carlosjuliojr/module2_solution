@@ -1,0 +1,99 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+	font-family: serif;
+	background: #F1A4A4;
+}
+
+h1 {
+	text-align: center;
+	color: #6D0808;
+	margin-bottom: 10px;
+}
+.row {
+	width: 100%
+}
+
+.title {
+position: absolute;
+float: right;
+top: 0;
+right: 0;
+color: #000;
+margin: 0;
+border:1px solid black;
+}
+#section1{
+	background: #B3A8A8;
+	border: 1px solid black;
+	position: relative;
+}
+
+#section1 .title {
+	background: #EDEB0F;
+}
+
+#section2 .title {
+	background: #131984;
+}
+
+#section3 .title {
+	background: red;
+}
+
+
+#section2{
+	background: #B3A8A8;
+	border: 1px solid black;
+	position: relative;
+}
+
+#section3{
+	position: relative;
+	background: #B3A8A8;
+	border: 1px solid black;
+}
+#section1, #section2, #section3 {
+ 	padding: 20px;
+ 	margin: 5px;
+ }
+/********** Large devices only **********/
+@media(min-width: 992px) {
+
+
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 32%;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width:768px) and (max-width: 991px) {
+
+	#section1, #section2, #section3 {
+		display: inline-block;
+	}
+ #section1, #section2 {
+    width: 48.3%;
+
+  }
+
+  #section3{
+  	width: 98%;
+  /*margin-top: 5px;*/
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+	#section1, #section2, #section3 {
+		display: inline-block;
+		width: 97.5%;
+		/*margin: 10px;*/
+	}
+}
+
